@@ -1,0 +1,10 @@
+[project]
+name = "agentic-ai-and-agentops-3-0"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = []
+
+[tool.uv.workspace]
+members = [
+    "my-first-project",
+]
