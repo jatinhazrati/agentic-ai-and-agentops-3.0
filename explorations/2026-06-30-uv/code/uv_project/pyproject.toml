@@ -1,0 +1,18 @@
+[project]
+name = "uv-project"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "numpy>=2.5.0",
+    "pandas>=3.0.3",
+    "scikit-learn>=1.9.0",
+    "requests",
+    "torch>=2.12.1",
+]
+
+[tool.uv.workspace]
+members = [
+    "sub_project",
+]
