@@ -29,12 +29,16 @@ Contents:
 │   ├── notebook.ipynb    demos
 │   └── <project>/        uv workspace member (mini-projects)
 └── explorations/
-    ├── README.md         index
-    └── YYYY-MM-DD-<slug>.md
+    ├── README.md                       index
+    ├── YYYY-MM-DD-<slug>.md            notes-only exploration
+    └── YYYY-MM-DD-<slug>/              exploration that grew code
+        ├── README.md                   the notes
+        └── code/
 ```
 
 Folder names use zero-padded `Class_NN` (so `Class_10` sorts after `Class_09`).
 Exploration filenames start with `YYYY-MM-DD-` for chronological sort.
+Explorations start as a flat `.md`; promote to a folder of the same name the moment code shows up (rename the `.md` to `README.md` inside it).
 
 ## Branch & PR workflow
 
