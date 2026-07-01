@@ -1,0 +1,39 @@
+# macOS — folder metadata, never useful in a repo
+.DS_Store
+
+# Python bytecode caches
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# Virtualenvs — recreated locally with `uv sync`, never committed
+.venv/
+venv/
+env/
+
+# uv — caches only. KEEP uv.lock committed (reproducible installs)
+.uv/
+
+# Jupyter — checkpoint folders pollute diffs
+.ipynb_checkpoints/
+
+# Editors
+.vscode/
+.idea/
+
+# Test / lint caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Secrets — API keys live here, NEVER in code
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Build artifacts
+dist/
+build/
+docs/
