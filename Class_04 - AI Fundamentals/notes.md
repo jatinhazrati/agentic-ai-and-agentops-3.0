@@ -93,3 +93,8 @@
   - Demonstrated live: sending “who am I?” required sending 3 messages total
 - Usage tracked per API key; visible in OpenAI/OpenRouter dashboards
   - Live demo: 2 messages = 45 input tokens, 82 output tokens
+
+## References
+
+- [AI terms, explained — instructor's interactive site](https://ai-terms-with-mayank.netlify.app)
+- [Context, explained — instructor's interactive site](https://context-with-mayank.netlify.app/)
