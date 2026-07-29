@@ -79,3 +79,7 @@
 - Parameters: billions of small numerical weights set during training
   - No single parameter means anything; capability emerges from their combined state
   - More parameters ≈ higher potential capacity, not guaranteed quality
+
+## References
+
+- [Pydantic, explained — instructor's interactive site](https://pydantic-with-mayank.netlify.app)
