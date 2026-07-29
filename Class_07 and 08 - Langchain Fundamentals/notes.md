@@ -1,4 +1,4 @@
-# Class 07: LangChain fundamentals — models, agents, and harness engineering
+# Class 07: Langchain fundamentals — models, agents, and harness engineering
 
 ## The LangChain / LangGraph Family
 
@@ -80,7 +80,7 @@
 - Environment key loading: load_dotenv() + os.environ.get("OPENAI_API_KEY")
 - Colab equivalent: Secrets panel + userdata.get("OPENAI_API_KEY")
 
-# Class 08: Lang chain models, messages, and structured output — in depth
+# Class 08: Langchain models, messages, and structured output — in depth
 
 ## LangChain Ecosystem Recap
 

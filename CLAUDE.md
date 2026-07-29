@@ -22,7 +22,7 @@ Contents:
 ├── .env.example
 ├── pyproject.toml        (root uv workspace)
 ├── uv.lock
-├── Class_NN/
+├── Class_NN - Title/
 │   ├── README.md         class hub
 │   ├── notes.md          curated bullet notes
 │   ├── code/             scratch scripts
@@ -36,7 +36,7 @@ Contents:
         └── code/
 ```
 
-Folder names use zero-padded `Class_NN` (so `Class_10` sorts after `Class_09`).
+Folder names are `Class_NN - Title` — zero-padded number (so `Class_10` sorts after `Class_09`) plus the class title after a ` - ` separator (e.g. `Class_05 - Agents with Pure Python`). Titles use spaces; quote paths in shell/`uv` commands. Combined sessions fold into one folder (e.g. `Class_07 and 08 - Langchain Fundamentals`).
 Exploration filenames start with `YYYY-MM-DD-` for chronological sort.
 Explorations start as a flat `.md`; promote to a folder of the same name the moment code shows up (rename the `.md` to `README.md` inside it).
 
@@ -81,16 +81,16 @@ When in doubt, ask which mode he wants.
 # Sync the whole workspace
 uv sync
 
-# Run a script in a workspace member
-uv run --project Class_01/my-first-project python main.py
+# Run a script in a workspace member (quote the path — titles have spaces)
+uv run --project "Class_01 - Packages and Getting Started/my-first-project" python main.py
 
 # Open a notebook
-uv run jupyter lab Class_01/notebook.ipynb
+uv run jupyter lab "Class_01 - Packages and Getting Started/notebook.ipynb"
 
-# Scaffold a new class folder (manual)
-mkdir -p Class_NN/code
-cp Class_01/README.md Class_NN/README.md   # then edit
-touch Class_NN/notes.md
+# Scaffold a new class folder (manual) — mind the quotes, titles have spaces
+mkdir -p "Class_NN - Title/code"
+cp "Class_01 - Packages and Getting Started/README.md" "Class_NN - Title/README.md"   # then edit
+touch "Class_NN - Title/notes.md"
 git checkout -b class_NN
 ```
 
@@ -104,14 +104,14 @@ git checkout -b class_NN
 
 ## Per-class checklist
 
-When starting `Class_NN`:
-- [ ] `git checkout -b class_NN` from latest `main`.
-- [ ] Create `Class_NN/` with `README.md`, `notes.md`, `code/`.
-- [ ] Fill `Class_NN/README.md` heading: date, topics planned, instructor links.
+When starting `Class_NN - Title`:
+- [ ] `git checkout -b class_NN` from latest `main` (branch stays plain `class_NN`, no title).
+- [ ] Create `Class_NN - Title/` with `README.md`, `notes.md`, `code/`.
+- [ ] Fill `Class_NN - Title/README.md` heading: date, topics planned, instructor links.
 
-When finishing `Class_NN`:
+When finishing `Class_NN - Title`:
 - [ ] `notes.md` exists and has the day's bullets.
-- [ ] `Class_NN/README.md` updated with what was actually covered.
+- [ ] `Class_NN - Title/README.md` updated with what was actually covered.
 - [ ] `git push -u origin class_NN` and open a PR.
 - [ ] PR body: 3 bullets of "what I learned."
 - [ ] Merge into `main` before the next class.

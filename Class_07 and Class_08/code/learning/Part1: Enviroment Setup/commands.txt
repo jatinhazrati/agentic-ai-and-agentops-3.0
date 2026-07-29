@@ -1,4 +1,0 @@
-uv init aurora-course
-cd aurora-course
-uv add langchain langchain-openai langchain-community langgraph python-dotenv
-uv add langchain-mcp-adapters langchain-chroma chromadb pypdf
